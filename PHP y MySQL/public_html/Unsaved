@@ -1,0 +1,15 @@
+$()
+filter_var(,filter_validate_email)==false
+-----------------------------------------------
+index.php
+
+case 'Login':
+            session_start();
+            break;
+------------------------------------------
+Para hacer el logout
+
+if(isset($_SESSION['user_id']))
+{
+	unset($_SESSION['user_id']);
+}

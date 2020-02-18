@@ -1,0 +1,47 @@
+<!--ESTA PAGINA TB SE DEBERA DE ENCARGAR DE COMPROBAR QUE EL USUARIO SE ENCUENTRA EN LA BASE DE DATOS-->
+<?php
+if(isset($_POST["enviar"])){
+
+    try{
+        $base=new PDO("mysql:host=localhost; dbname=pruebas" , "root", "");	/*datos de conexion a la base de datos en phpmyadmin*/
+        /*establecemos propiedaddes de la conexion:*/
+        $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);/*el objeto base llama a la funcion atribute*/
+        $sql="SELECT * FROM USUARIOS_PASS WHERE USUARIOS= :login AND PASSWORD= :password"; /*uso los dos marcadores para la sentecia sql (instruccion sql encargada de mirar en la base de datos si el usuario esta registrado)*/
+        /*creamos consulta preparada con marcadores:*/
+        $resultado=$base->prepare($sql);	/*creamos variable resultado=conexion que llama a la funcion prepare, encargada de preparar la instruccion sql*/
+        /*rescatamos login y password introducido en el formulario de la pagina:*/
+        $login=htmlentities(addslashes($_POST["login"]));	/*convertimos cualquier simbolo en html"_-... (addslashes omitirá aquellos caracteres de inyeccion sql)*/
+        $password=htmlentities(addslashes($_POST["password"]));/*para que rescate lo que el usuario introdujo en el cuadro de texto password del formulario*/
+
+        /*IDENTIFICAMOS CADA MARCADOR CON SU CUADRO DE TEXTO(bindValue)*/
+        $resultado->bindValue(":login", $login);
+        $resultado->bindValue(":password", $password);
+        /*EJEUTAMOS NUESTRA INSTRUCCION SQL*/
+        $resultado->execute();
+
+        //recupero la fila del usuario con sus datos para quedar el id almacenado en la sesion
+        $usuario_autentificado = $resultado->fetch();
+
+        /*PARA SABER SI EL USUARIO ESTÁ DENTRO O NO DE LA BASE DE DATOS (rowCount-> devuelve el numero de registros que devuelve una consulta, si no existe = 0 filas, si existe = 1 row)*/
+        $numero_registro=$resultado->rowCount();
+        if($numero_registro != 0){/*si existe*/
+            session_start(); //para crear sesion para el usuario que se acaba de logear (variable superglobal $_SESSION, podremos usarlo en cualquier lugar de nuestro sitio)
+            $_SESSION["usuario"]=$_POST["login"];	//rescatamos de la pagina del formulario (cuadro de texto login del formulario)
+            $_SESSION["userid"]= $usuario_autentificado['ID'];
+            header("Location:/Enreos PHP/sistema_login3/Contact.php");
+
+        }else{/*2opc: bucle inf ó rewrite*/
+
+            /*header("location:login.php");	redirige para que vuelva a introducir*/
+            echo "<br><br>ERROR. Incorrect user or password. TRY AGAIN";
+			
+
+        }
+
+
+    }catch(Exception $e){
+
+        die("Error: " . $e->getMessage());
+    }
+
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>    
+  <head>        
+    <title>Country in images
+    </title>        
+    <meta charset="UTF-8">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    <style>    
+	
+	html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+	 padding: 0;
+	 margin: 0;
+	 font-size: 100%;
+	 font-weight: normal;
+	}
+	table { border-collapse: collapse; border-spacing: 0; }
+	td, th, caption { font-weight: normal; text-align: left; }
+	img, fieldset { border: 0; }
+	ol { padding-left: 1.4em; list-style: decimal; }
+	ul { padding-left: 1.4em; list-style:square; }
+	q:before, q:after { content:''; }
+    /*   reset selected elements and attributes, e.g. body, headings, semantic elements, paragraphs, font size, box model sizes
+    
+    */
+    
+    
+    /* set the basic font size 
+    */
+    body{
+		font-size:15px;
+    }   
+      
+    h1 {
+		font-size:62.5%;
+		font:normal 2.4em Verdana, Geneva, sans-serif;
+		margin:0;
+		padding:5px 0 5px 0px;
+    }
+    
+    /*  set margins
+    use the margin attribute, eventually others
+    */ 
+     
+    .gallery {
+		margin:60px;
+		padding: 50px;
+		float:left;
+		border-color: #0C3;
+		border-style: solid;
+    }
+    
+    
+    /*  set the sizes as relative to the font
+    hide the part that does not fit the box
+    messages should be layed out horizontally as wide as possible
+    use the float or display property as well as width, height, overflow, margin properties, eventually others
+    */
+    .photo-box {
+		margin-top:20px;
+		float: left;
+		width: 200px;
+		height: 170px;
+		border-color: #F00;
+		border-style: solid;
+
+    } 
+    
+    /* the image size should change according to the amount of the space available
+    the image size should not exceed some limit
+    choose from width, max-width, height, max-height properties
+    */
+    img {
+		margin-left: 5px;
+		max-width: 180px;
+		max-height: 150px;
+		padding-top: 5px;
+    }
+    
+    /* box shadowing
+    */
+    .gallery, .photo-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float:center;
+	margin-left: 50px;
+    }
+    
+    .caption{
+    padding-top: 15px;
+	margin-top: 10px auto;
+    }
+
+    /*   text panel in header and footer
+    */
+    div.text-box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 2em;
+    margin: .5em; 
+	
+	clear:both;
+	/*padding-top:100px;*/
+    }
+    
+    .flex-container, .flex-item {
+    /* no styling, will be used later*/
+    }
+
+    </style>        
+  </head>         
+  <body>        
+    <div class="text-box">        <h1>Image gallery</h1>        
+    </div>                 
+    <div class="gallery flex-container">                 
+      <div class="photo-box flex-item">        
+        <img src="img/img1.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                 
+      <div class="photo-box flex-item">        
+        <img src="img/img2.jpg" alt="country" height="150px" width="auto">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                 
+      <div class="photo-box flex-item">        
+        <img src="img/img3.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img4.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img5.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img6.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img7.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img8.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img9.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img10.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img11.jpg" alt="country" height="150px" width="180px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>                          
+      <div class="photo-box flex-item">        
+        <img src="img/img12.jpg" alt="country" height="150px" width="160px">        
+        <div class="caption">        
+          <p>popis fotky
+          </p>        
+        </div>        
+      </div>         
+    </div>             
+    <p class="end-of-floating">  
+    </p>              
+    <div class="text-box">        
+      <footer>        Images were taken from pixabay.com.         
+      </footer>        
+    </div>          
+  </body>
+</html>

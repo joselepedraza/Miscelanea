@@ -1,0 +1,15 @@
+Instructions
+
+Create four different responsive design styles for the HTML5 document (attached cv4.zip file).
+
+Step:
+
+    Finish the stylesheet (basic.css) for the page with quotations (index.html) for different device types (responsive design).
+    Proceed according to requirements in comments (in the basic.css file).
+    Create 3 styles according to the device width (referred to as narrow, normal and wide formats) and one style for print.
+    Common parts of styling will be defined once, i.e. they will not be repeated in particular styles.
+    In the print variant, standard paper size and white color of the paper will be considered; a font family suitable for print will be selected.
+    Styles can be tuned in developer tools (e.g. F12 key in Chrome).
+    Remember to reset and/or normalize your styles.
+
+In images attached (cv4.zip) you can find previews of narrow, normal and wide formats.

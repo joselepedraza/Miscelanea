@@ -1,0 +1,222 @@
+﻿/* CSS Document */
+@charset "utf-8";
+
+/* ****************************** */
+/* reset and/or normalization  */
+/* ****************************** */
+
+/* ********************************** */
+/* common style for all variants */
+/* ********************************** */
+
+/* ************* */
+/* document */
+/* ************* */
+
+/*      
+body {
+  margin: 0;
+  
+  Set the background color to gray-black; it will be used when the background image is not available
+  Add background image
+  Set fixed display of the image to prevent scrolling with content of the page
+  Set the font color to oldlace
+  Set the font family to Sofia
+  
+  Hint:
+  background: ;                      
+  background-image: ;
+  background-attachment: ;      
+  color:  ;                     
+  font-family: ;   
+}   
+*/
+ 
+/* 
+.container { 
+  border-width: 3px;
+  border-radius: 10px;
+  
+  Set the width of the element to extend into a large portion of the screen width
+  Set the background color to gray and slightly transparent to see through it the background image of the body
+  Set the padding to some suitable non-zero value
+  Center the content on the page; use margin atribute for this purpose
+  
+  Hint:
+  width: ;     
+  background-color: ;                                  
+  padding: ;       
+  margin: ;                                                 
+}
+*/
+
+/* 
+.content {
+  Set the bottom padding and bottom margin to some suitable non-zero value
+  
+  Hint:
+  padding-bottom: ;
+  margin-bottom: ;  
+}
+*/
+
+              
+/* 
+.quotation-source {
+
+  Set the top margin to some suitable negative value   
+  Set the upper "underlining" of text
+  Set capital letters
+  Set text aligning to right 
+  
+  Hint:
+  margin-top: ;                                     
+  text-decoration: ;       
+  font-variant: ;    
+  text-align: ;        
+}
+*/
+
+
+/*
+  Set the font in bold for the class author.   
+  Set the font in italics for the class work.
+
+  Hint:
+.author {font-weight: ;}
+.work {font-style: ; }
+*/
+
+/*  
+aside {
+
+  Set the top margin to some suitable value, preferably in em
+
+  Hint:
+  margin-top: ; 
+}  
+*/
+
+/*  
+header {
+
+  Set the width of the bottom margin to some suitable absolute value, 
+  Set the style of the bottom border to dotted line.
+
+  Hint:
+  border-bottom-width: ;  
+  border-bottom-style: ;    
+  }
+*/
+
+
+/*  
+header, footer{
+
+  Set the color of the border equal to the color of the font
+  Center the text 
+  
+  Hint:
+  border-color: ;
+  text-align:        
+  }
+*/
+
+/*  
+footer{
+
+  Set the width of the top border to some suitable absolute value, 
+  Set the style of the top border to dotted line
+  
+  Hint:
+  border-top-width: ;  
+  border-top-style: ;           
+}
+                               
+*/     
+
+/* ************************************************************ */
+/* format of particular variants, the narowest is the first*/
+/* *********************************************************** */
+
+/* ************************************************** */
+/* narrow format, for screen 230px-and-more wide */
+/* ************************************************** */
+/*
+Define the format for screens with min. width 230px
+Set the font to Amatic SC
+@media only ... and (min-width: ) {
+   
+   Hint:
+   body{font-family: ;}
+     
+ }                */
+
+/* ************************************************** */
+/* normal format, for screen 540px-and-more wide */
+/* ************************************************** */
+/*
+Define the format for screens with min. width 540px
+
+@media only ... and (min-width: ){
+
+  Set the font to Caveat
+  For headings of the second level, set the bottom border to dotted line, 2px width, the same color as that of font 
+  For elements in the aside element, set displaying in line and increase the bottom margin to na 1em
+  Set for the quotation-page class displaying in two columns (column-count attribute), with 2em-thick gap between columns and with gray dotted 2px-thick column rule   
+  Hint:
+  body {font-family:   }   
+  h2 {border-bottom-style: } 
+  aside ul, li {display:  }
+  aside {margin-bottom:  }  
+  .quotation-page {column-count:  ; column-gap:  ; column-rule: ;  }
+  
+}                 
+*/
+
+/* ************************************************** */
+/* wide format, for screen 768px-and-more wide  */
+/* ************************************************** */
+/*
+Define the format for screens with min. width 768px
+
+@media only ... and (min-width: ){
+
+  Set the font to Open Sans Condensed  
+  For the container class, set max. width to 1100px  
+  For the heading of the second level, set expansion through all columns 
+  For the quotation-page class, set displaying in three columns (column-count attribute) of 150px width 
+  For the content class, set float right and width 80%  
+  For the aside element, set float left
+  For the footer element, cancel the effect of floating (clear attribute) 
+  
+  Hint:
+  body {font-family:           }
+  .container {max-width:  } 
+  h2 {column-span: }   
+  .quotation-page {columns: }
+  .content {float: ; width: ;} 
+  aside {float: ; }  
+  footer{clear: ;}
+}    */
+
+
+/* ************************************************** */
+/* print format */
+/* ************************************************** */
+
+/*
+Define the print format 
+
+@media only ... {
+
+  Set the font to Comic Sans MS, black color
+  For the content and container elements, set no padding, no margin, no border
+  
+  Hint:
+  body {font: ;    color: ;    }
+  .content, .container {padding: ; margin: ; border: ;} 
+   
+} */
+
+

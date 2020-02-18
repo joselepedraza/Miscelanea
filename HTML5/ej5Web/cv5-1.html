@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='cs'>  
+  <head>    
+    <title>Messages
+    </title>    
+    <meta charset='utf-8'>    
+    <meta name='description' content=''>    
+    <meta name='keywords' content=''>    
+    <meta name='author' content=''>    
+    <meta name='robots' content='all'>    
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>         
+    <style>    
+    /*   reset selected elements and attributes, e.g. body, headings, semantic elements, paragraphs, font size, box model sizes
+    
+    */
+	
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+    
+    
+    /* set the basic font size 
+    */
+    body{
+		
+		/*font:normal 1em Verdana, Geneva, sans-serif;*/
+		font-size: 60%;
+		margin:auto;
+    }   
+      
+    h2 {
+		font:bold 1.5em Verdana, Geneva, sans-serif;
+    }
+    
+    /*  set margins
+    use the margin attribute, eventually others
+    */   
+    .messages {
+		width: 90%;
+		height: 100%;
+		margin: 1%;
+		overflow: hidden;
+		padding: 1%;
+		float:left;
+		border:4px solid #0C3;
+		border-radius: 25px;
+		clear:both;
+		
+		 
+    }
+    
+    
+    /*  set the sizes as relative to the font
+    hide the part that does not fit the box
+    messages should be layed out horizontally as wide as possible
+    use the float or display property as well as width, height, overflow, margin properties, eventually others
+    */
+    .message {
+		font:bold 1.3em Verdana, Geneva, sans-serif;
+		border-style: solid;
+		border-color: #F00;
+		border-radius: 30px;
+		display: inline-table;
+		width: 150px;
+		height: 150px;
+	/*	max-height: rem;
+		max-width: rem;*/
+		margin: 1%;
+		padding: 1%;
+		text-align:center;
+		overflow: hidden;
+		
+		
+		
+		
+		
+    } 
+    
+    
+    .messages, .message {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+	
+	          }
+		
+    }
+	
+    </style>  
+  
+  </head>  
+  <body>  
+    <article class="messages">  
+      <div class="message">  
+      <h2>Quisque porta </h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nunc auctor. 
+            
+        </p>  
+      </div>     
+      <div class="message" > 
+       <h2> Mauris metus</h2>
+        <p>Phasellus et lorem id felis nonummy placerat. Etiam posuere lacus quis dolor. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. 
+            
+        </p>  
+      </div>     
+      <div class="message" >  
+      <h2>Fusce wisi</h2>
+        <p>Phasellus rhoncus. Praesent id justo in neque elementum ultrices. Aliquam ornare wisi eu metus. Pellentesque ipsum. Cras elementum. Nulla est.
+        </p>  
+      </div>     
+      <div class="message" > 
+       <h2>Maecenas lorem </h2>
+        <p>Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.  
+        
+        </p>  
+      </div>     
+      
+      <div class="message" >  
+      <h2>Nulla est</h2>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+        
+        </p>  
+      </div>     
+      
+      <div class="message"  >  
+      <h2>Veni, vidi ...</h2>
+      <p>Nullam at arcu a est sollicitudin euismod. Fusce suscipit libero eget elit. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. 
+        </p>
+          
+      </div>
+      
+          
+      <div class="message" >  
+      <h2>Non vici</h2>
+      <p>Ut tempus purus at lorem. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Curabitur sagittis hendrerit ante. 
+        </p>  
+      </div>     
+      
+      <div class="message" >  
+      <h2>Plus quam</h2>
+        <p>Nullam at arcu a est sollicitudin euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+       
+        </p>  
+      </div>     
+      
+      <div class="message" >  
+      <h2>Ante portas</h2>
+      <p>Etiam egestas wisi a erat. Et harum quidem rerum facilis est et expedita distinctio.  
+       
+        </p>  
+      </div>     
+      
+      
+      
+           
+    </article>                    
+  </body>
+</html>

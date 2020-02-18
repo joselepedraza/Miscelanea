@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "airstrike";
+  src: url("font/airstrike.ttf");
+}
+
+input[type=text], input[type=email], input[type=password] 
+{
+    width: 320px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 3px solid rgba(0, 0, 0, 0.60);
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    left: 490px;
+    top: 30px;
+    background: rgba(0, 0, 0, 0.53);
+    color: white;
+}
+
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover
+{
+    border: 3px solid rgba(255, 255, 255, 0.48);
+    outline: none;
+    transition: 0.5s;
+    border-radius: 25px;
+} 
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus
+{
+    border: 3px solid white;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 25px;
+} 
+
+input[type=submit], input[type=reset]
+{
+    border: 3px solid rgba(0, 0, 0, 0.60);
+    border-radius: 25px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 455px;
+    top: 30px;
+    background: rgba(0, 0, 0, 0.53);
+    font-family: "airstrike";
+}
+
+input[type=submit]:hover, input[type=reset]:hover
+{
+    border: 3px solid rgba(255, 255, 255, 0.48);
+    outline: none;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
+input[type=submit]:active, input[type=reset]:active
+{
+    border: 3px solid white;
+    outline: none;
+    border-radius: 25px;
+    transition: 0s;
+}
+
+label
+{
+    position: relative;
+    left: 630px;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: "airstrike";
+}
+
+h1
+{
+    position: relative;
+    left: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+}
+
+h3
+{
+    position: relative;
+    left: 10px;
+    top: 58px;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    font-size: 50px;
+    font-family: "airstrike";
+    color: orange;
+    z-index: 1;
+    -webkit-text-stroke: 1px black;
+}
+
+input#r1
+{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    left: 630px;
+    top: 30px;
+    cursor: pointer;
+}
+
+input#r2
+{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    left: 800px;
+    top: 30px;
+    cursor: pointer;
+}
+
+p#p1
+{
+    position: absolute;
+    left: 557px;
+    width: 0px;
+    top: 912px;
+    text-align: center;
+    font-size: 20px;
+    cursor: default;
+    font-family: "airstrike";
+}
+
+p#p2
+{
+    position: absolute;
+    left: 740px;
+    width: 0px;
+    top: 912px;
+    text-align: center;
+    font-size: 20px;
+    cursor: default;
+    font-family: "airstrike";
+}
+
+html
+{
+    position: relative;
+    background: url(img/sport_background.jpg) no-repeat center;
+    background-attachment: fixed;
+    overflow-x:hidden;
+}
+
+h4
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-right: 10px;
+    left: 0px;
+    top: 42px;
+    width: 98.7%;
+    text-align: center;
+    cursor: default;
+    font-size: 50px;
+    font-family: "airstrike";
+    background: rgba(0, 0, 0, 0.53);
+}
+
+img#Logo
+{
+    position: absolute;
+    top: 0px;
+    margin: 10px;
+}
+
+*::-webkit-input-placeholder
+{
+    color: white;
+}
+
+img#Logo:hover
+{
+    transition: all 0.3s;
+    transform: scale(0.9);
+}
+
+input#boton
+{
+    border: 3px solid rgba(0, 0, 0, 0.60);
+    border-radius: 25px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 520px;
+    top: 400px;
+    background: rgba(0, 0, 0, 0.53);
+    font-family: "airstrike";
+}
+
+input#boton:hover
+{
+    border: 3px solid rgba(255, 255, 255, 0.48);
+    outline: none;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
+input#boton:active
+{
+    border: 3px solid white;
+    outline: none;
+    border-radius: 25px;
+    transition: 0s;
+}
+
+h4#linea
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-right: 10px;
+    left: 0px;
+    top: 42px;
+    width: 98.7%;
+    height: 90px;
+    text-align: center;
+    cursor: default;
+    font-size: 50px;
+    font-family: "airstrike";
+    background: rgba(0, 0, 0, 0.53);
+}
+
+input#boton2
+{
+    border: 3px solid rgba(0, 0, 0, 0.60);
+    border-radius: 25px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 520px;
+    top: 357px;
+    background: rgba(0, 0, 0, 0.53);
+    font-family: "airstrike";
+}
+
+input#boton2:hover
+{
+    border: 3px solid rgba(255, 255, 255, 0.48);
+    outline: none;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
+input#boton2:active
+{
+    border: 3px solid white;
+    outline: none;
+    border-radius: 25px;
+    transition: 0s;
+}
+
+p#error
+{
+    position: relative;
+    margin-bottom: 60px;
+    left: 0px;
+    top: 58px;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    font-size: 30px;
+    font-family: "airstrike";
+    color: red;
+    z-index: 1;
+    -webkit-text-stroke: 1px black;
+}
+
+p#p3
+{
+    position: absolute;
+    left: 557px;
+    width: 0px;
+    top: 995px;
+    text-align: center;
+    font-size: 20px;
+    cursor: default;
+    font-family: "airstrike";
+}
+
+p#p4
+{
+    position: absolute;
+    left: 740px;
+    width: 0px;
+    top: 995px;
+    text-align: center;
+    font-size: 20px;
+    cursor: default;
+    font-family: "airstrike";
+}

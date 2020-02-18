@@ -1,0 +1,23 @@
+
+Instructions
+
+Add valid CSS styl to the document from previous exercise. Follow these steps:
+
+    Plan styles for a given text (ie. style for headings, paragraphs, lists, tables, links, images).
+    Compose CSS rules (attributes and values, selectors).
+    Create a stylesheet in PSPad (or other) editor.
+    Check the validity of the CSS style (use the service at https://jigsaw.w3.org/css-validator/).
+    Correct errors.
+    Display the document in the browser..
+    Publish the document at W: drive and check the accessibility from Internet (see exercises from week one).
+
+Style the following properties (optionally others, too):
+
+    font size (font-size), font type (font-variant, text-transform, font-style, text decoration), text indentation (text-align, text-indent), width of element (width), background color (background-color), list style (list-style-type), table border (border)
+
+Make experiments and find out how to achievethe following effects (selector tasks):
+
+    links are not underlined
+    list items are displayed one AFTER another in one row (instead of one UNDER other)
+    style of some paragraphs differs from the style of some other paragraphs
+

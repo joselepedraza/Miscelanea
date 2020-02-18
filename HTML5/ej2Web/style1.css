@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+*/
+
+body{
+	background-color:#093;
+	font: normal .875em Verdana, Geneva, sans-serif;
+	margin: 2%;
+	padding-bottom: 2%;
+	width: 95%;
+	/*font-size: 20%;*/
+	
+}
+
+h1{
+	background-color:#C63;
+	font: bold 1.375em Verdana, Geneva, sans-serif;
+	font-style: italic;
+	text-align: center;
+	float:center;
+	display: inline;
+	width: 100%;
+	margin-left: 40%;
+}
+
+#MainImg{
+	text-align:center;
+}
+
+h3{
+	background:repeating-linear-gradient(to right, #F00, #0000FF, #FFFF00, #00FFFF, #FF00FF);
+	padding-left:5%;
+	
+	
+
+}
+
+table{
+	background:repeating-radial-gradient(#F00, #0000FF, #FFFF00, #00FFFF, #FF00FF);
+	border-radius:10%;
+	margin: 2% auto;
+}
+
+p{
+	width:90%;
+	/*text-align:center;*/
+}
+
+#p1{
+	text-transform:capitalize;
+	font-style: oblique;
+	direction:ltr; 
+	word-wrap:break-word;
+	font-size: 1.5em;
+	
+}
+#p2{
+	text-transform:capitalize;
+	font-style: italic;
+	direction:ltr; 
+	word-wrap:break-word;
+	font-size: 1.5em;
+	background-color: #F00;
+	border-radius: 15%;
+	overflow:hidden;
+	padding: 2%;
+	
+}
+
+#p3{
+	text-transform:capitalize;
+	text-align:justify;
+	font-style: italic;
+	direction:ltr; 
+	word-wrap:break-word;
+	font-size: 1.5em;
+	background-color: #0000FF;
+	border-radius: 20%;
+	/*overflow:scroll;*/
+	padding: 2%;
+	
+}
+
+#p4{
+	text-transform:lowercase;
+	text-indent: hanging;
+	font-variant: small-caps;
+	font-style: normal;
+	direction:ltr; 
+	word-wrap:break-word;
+	font-size: 1.5em;
+	background-color: #FFFF00;
+	border-radius: 20%;
+	overflow:inherit;
+	padding: 2%;
+	
+}
+/* para quitar subrayado
+a{
+	text-decoration:none;
+}
+*/
+a:link {	/*para cualquier link*/
+  color: green;
+  background-color: #0F6;
+  border-radius:15%;
+  text-decoration: none;
+}
+
+a:visited {	/*para links visitados*/
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {	/*para cuando posicionamos el puntero sobre el link sin clikarlo*/
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {	/*cuando le estamos clikando*/
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/*
+#bar{
+	list-style-type: disc;
+}
+*/
+#lbar{
+	display:inline;
+	padding:4%;
+}
+
+#llinks{
+	display:inline;
+	padding: 0.5%;
+}
+

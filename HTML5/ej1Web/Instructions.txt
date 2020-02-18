@@ -1,0 +1,15 @@
+
+Instructions
+
+Select at least one text attachement text1-1 and text1-2 and prepare it for publication at web in the form of valid static web page according to the requirements specified below. The document has to be partitioned into headings, paragraphs, liste and a small table (2 rows and 3 columns wil  be sufficient ). Furthermore, it should contain at least one image and at least one link leading outside of the site. 
+
+Requirements:
+
+    Consider the logical structure of the text  (its division into heading, blocks like paragraphs, lists and tables, connections with other sources via links, image information).
+    Select appropriate HTML5 constructs (HTML5 elements, attributes)
+    Create an HTML5 document in PSPad  editor.
+    Validate the document (https://validator.w3.org/ service)
+    Correct the errors
+    Display the document in the browser
+    Publish the document at W: drive. Check the document accessibility fron the Internet (lide.uhk.cz/fim/student/your-login/document-name-including-the full-path)
+

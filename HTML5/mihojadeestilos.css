@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cabeceraweb{
+	background-color:#6F6;
+}
+
+#navegacionprincipal{
+	background-color:#C33;
+}
+
+#barralateral{
+	background-color:#3FF;
+	float:left;
+	height:870px;
+}
+
+#contenidoprincipal{
+	background-color:#63F;
+	margin-left:200px;
+	padding-left:30px;
+	padding-top:10px;
+}
+
+#pieprincipal{
+	background-color:#F0F;
+	clear:both;
+	margin-top:10px;
+}
+
+li{
+	background-color:#996;
+	display:inline;
+}
+
